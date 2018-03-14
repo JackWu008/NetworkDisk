@@ -6,8 +6,9 @@ import net.lzzy.networkdisk.models.UserFile;
 import java.util.Comparator;
 
 public class FileSortFactory {
-    public static final int SORT_BY_FOLDER_AND_NAME = 1;
+    public static final int SORT_BY_FOLDER_AND_NAME = 1;//按文件夹和名称排序。
     public static final int SORT_BY_FOLDER_REVERSE_AND_NAME = 2;
+
     public static final int SORT_BY_FOLDER_AND_NAME_REVERSE = 3;
     public static final int SORT_BY_FOLDER_REVERSE_AND_NAME_REVERSE = 4;
 

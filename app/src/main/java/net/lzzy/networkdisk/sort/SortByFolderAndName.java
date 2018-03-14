@@ -35,11 +35,11 @@ public class SortByFolderAndName implements Comparator<UserFile> {
         }
 
         if (second) {
-            if (lhs.isFile() ^ rhs.isFile()) {
+            if (!(lhs.isFile() ^ rhs.isFile())) {
                 return lhs.getName().compareTo(rhs.getName());
             }
         } else {
-            if (lhs.isFile() ^ rhs.isFile()) {
+            if (!(lhs.isFile() ^ rhs.isFile())) {
                 return -lhs.getName().compareTo(rhs.getName());
             }
         }

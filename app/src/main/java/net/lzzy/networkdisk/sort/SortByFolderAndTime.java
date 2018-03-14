@@ -18,6 +18,33 @@ public class SortByFolderAndTime implements Comparator<UserFile> {
 
 	@Override
 	public int compare(UserFile lhs, UserFile rhs) {
+//		if (first) {
+//			if (!lhs.isFile() && rhs.isFile()) {
+//				return -1;
+//			}
+//			if (lhs.isFile() && !rhs.isFile()) {
+//				return 1;
+//			}
+//		} else {
+//			if (!lhs.isFile() && rhs.isFile()) {
+//				return 1;
+//			}
+//			if (lhs.isFile() && !rhs.isFile()) {
+//				return -1;
+//			}
+//		}
+//
+//		if (second) {
+//			if (lhs.isFile() == rhs.isFile()) {
+//				return -Long.compare(lhs.getCreateDate(), rhs.getCreateDate());
+//			}
+//		} else {
+//			if (lhs.isFile() == rhs.isFile()) {
+//				return +Long.compare(lhs.getCreateDate(), rhs.getCreateDate());
+//			}
+//		}
+
+
 		if (first) {
 			if (!lhs.isFile() && rhs.isFile()) {
 				return -1;
@@ -35,14 +62,16 @@ public class SortByFolderAndTime implements Comparator<UserFile> {
 		}
 
 		if (second) {
-			if (lhs.isFile() == rhs.isFile()) {
+			if (!(lhs.isFile() ^ rhs.isFile())) {
 				return -Long.compare(lhs.getCreateDate(), rhs.getCreateDate());
 			}
 		} else {
-			if (lhs.isFile() == rhs.isFile()) {
+			if (!(lhs.isFile() ^ rhs.isFile())) {
 				return +Long.compare(lhs.getCreateDate(), rhs.getCreateDate());
 			}
 		}
+
+
 		return 0;
 	}
 }
