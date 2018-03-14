@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:itemIconTint="@color/colorPrimary"
+        android:icon="@drawable/ic_setting"
+        android:id="@+id/menu_navigation_setting"
+        android:title="@string/menu_navigation_setting" />
+    <item
+        app:itemIconTint="@color/colorPrimary"
+        android:icon="@drawable/ic_feedback"
+        android:id="@+id/menu_navigation_feedback"
+        android:title="@string/menu_navigation_feedback" />
+    <item
+        app:itemIconTint="@color/colorPrimary"
+        android:icon="@drawable/ic_about"
+        android:id="@+id/menu_navigation_about"
+        android:title="@string/menu_navigation_about" />
+    <item
+        app:itemIconTint="@color/colorPrimary"
+        android:icon="@drawable/ic_exit"
+        android:id="@+id/menu_navigation_exit"
+        android:title="@string/menu_navigation_exit" />
+</menu>

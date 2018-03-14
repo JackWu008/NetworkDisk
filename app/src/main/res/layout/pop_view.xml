@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pop_view_btn_camera"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="拍照"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_activate" />
+
+    <Button
+        android:id="@+id/pop_view_btn_album"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="相册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_activate" />
+
+    <Button
+        android:id="@+id/pop_view_btn_close"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="取消"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_activate" />
+</LinearLayout>

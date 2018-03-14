@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorRefreshA">#ffF44336</color>
+    <color name="colorRefreshB">#06be98</color>
+    <color name="colorPrimary">#00b0ff</color>
+    <color name="colorPrimaryDark">#00b0ff</color>
+    <color name="colorAccent">#00b0ff</color>
+    <color name="item_select_state">#dbe8ef</color>
+    <color name="colorLoginButtonBack">#b4b7b9</color>
+    <color name="colorTextError">#00ff00</color>
+    <color name="colorHintError">#FF0000</color>
+    <color name="colorEditContent">#111111</color>
+    <color name="colorGeneralWindowBackground">#2ab8f9</color>
+    <color name="md_blue_grey">#546E7A</color>
+    <color name="md_white">#ffffff</color>
+    <color name="md_grey">#616161</color>
+    <color name="md_black">#000000</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="transparent_70_black">#4C000000</color>
+    <color name="color_48baf3">#48BAF3</color>
+    <color name="bottom_select_item_back">#2e3639</color>
+    <color name="colorViewBackground">#ffffff</color>
+    <color name="colorGeneralBackground">#ddebf1</color>
+    <color name="grey">#eeeeee</color>
+    <color name="white">#eeeeee</color>
+</resources>

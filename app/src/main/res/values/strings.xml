@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">蓝云网盘</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="activity_login_email">邮箱</string>
+    <string name="activity_login_edt_password">密码</string>
+    <string name="activity_login">登录</string>
+    <string name="activity_login_tv_find_password">忘记密码？</string>
+    <string name="activity_login_tv_add_account">注册账号</string>
+    <string name="activity_account">注册</string>
+    <string name="activity_account_name">昵称</string>
+    <string name="activity_account_password">密码</string>
+    <string name="activity_account_ok_password">确认密码</string>
+    <string name="activity_account_email">邮箱</string>
+    <string name="activity_account_btn_get_check_code">获取验证码</string>
+    <string name="activity_account_edt_check_code">验证码</string>
+    <string name="menu_main_dow">传输管理</string>
+    <string name="menu_main_search">搜索</string>
+    <string name="menu_main_sort">排序</string>
+    <string name="menu_choose">全选</string>
+    <string name="menu_rename">重命名</string>
+    <string name="upload_path">上传至:%1$s</string>
+    <string name="upload">上传(%1$s)</string>
+    <string name="menu_download">下载</string>
+    <string name="menu_delete">删除</string>
+    <string name="activity_modify_title">修改密码</string>
+    <string name="activity_modify_btn_modify">修改密码</string>
+    <string name="activity_account_edt_old_password">旧密码</string>
+    <string name="activity_account_edt_new_one">新密码</string>
+    <string name="activity_account_edt_new_two">确认新密码</string>
+    <string name="pattern_matches_folder_name"><![CDATA[(?!((^(con)$)|^(con)//..*|(^(prn)$)|^(prn)//..*|(^(aux)$)|^(aux)//..*|(^(nul)$)|^(nul)//..*|(^(com)[1&#8211;9]$)|^(com)[1&#8211;9]//..*|(^(lpt)[1&#8211;9]$)|^(lpt)[1&#8211;9]//..*)|^//s+|.*//s$)(^[^/////////://*//?///\"//<//>//|]{1,255}$)]]></string>
+    <string name="a">添加</string>
+    <string name="todo">TODO</string>
+    <string name="fragment_all_file_sort_title">按文件名称排序</string>
+    <string name="include_select_item_delete">删除</string>
+    <string name="include_select_item_dow">下载</string>
+    <string name="include_select_item_edit">重命名</string>
+    <string name="include_select_item_detail">详情</string>
+    <string name="activity_select_path_upload_path">上传到这里</string>
+    <string name="detail_type"><![CDATA[ <b>类型:</b> %1$s <br>]]></string>
+    <string name="detail_size"><![CDATA[ <b>大小:</b> %1$s <br>]]></string>
+    <string name="detail_ext"><![CDATA[ <b>后缀:</b> %1$s <br>]]></string>
+    <string name="detail_create_time"><![CDATA[ <b>创建时间:</b> %1$s <br>]]></string>
+    <string name="detail_end_time"><![CDATA[ <b>上次修改:</b> %1$s]]></string>
+    <string name="file">文件</string>
+    <string name="folder">文件夹</string>
+    <string name="fragment_all_file_tv_hint">这里是空的哦，快点上传文件吧</string>
+    <string name="fragment_btn_refresh">刷新</string>
+    <string name="menu_navigation_setting">设置</string>
+    <string name="menu_navigation_about">关于</string>
+    <string name="activity_setting_save_path">默认下载位置</string>
+    <string name="activity_select_path_tv_save_path">选择这里</string>
+    <string name="menu_navigation_exit">退出</string>
+    <string name="network_none_hint">网络异常，请检查网络！</string>
+    <string name="network_non_wifi_hint">检测到现在的网络为非WiFi网络，继续会消耗手机流量，确定继续？</string>
+    <string name="pattern_matches_folder_name_hint"><![CDATA[文件名不能为被保留的设备名和不能包含英文的\/:*?"<>|]]></string>
+    <string name="activity_setting_cache">清除本地缓存</string>
+    <string name="activity_user_pass">修改密码</string>
+    <string name="menu_navigation_feedback">反馈</string>
+    <string name="activity_user_btn_exit">退出登录</string>
+    <string name="activity_user_tv_add">扩容</string>
+    <string-array name="select_sort">
+        <item>按文件名称排序</item>
+        <item>按创建时间排序</item>
+    </string-array>
+
+    <string-array name="main_tags">
+        <item>全部</item>
+        <item>图片</item>
+        <item>音乐</item>
+        <item>文档</item>
+        <item>视频</item>
+    </string-array>
+
+    <string-array name="task_tags">
+        <item>下载中</item>
+        <item>上传中</item>
+        <item>已下载完成</item>
+        <item>已上传完成</item>
+    </string-array>
+    <integer-array name="refresh_colors">
+        <item>@color/colorRefreshA</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorRefreshB</item>
+    </integer-array>
+
+
+
+    <string name="file_name_device_info" translatable="false">设备信息.txt</string>
+    <string name="file_name_device_log" translatable="false">设备日志.txt</string>
+    <string name="feedback_mail_subject">feedback about %1$s</string>
+    <string name="cancel">Cancel</string>
+    <string name="Ok">OK</string>
+    <string name="your_input">请输入反馈内容</string>
+    <string name="send_feedback">发送</string>
+    <string name="from" translatable="false">从:</string>
+    <string name="please_write">请写点东西</string>
+    <string name="send_feedback_two">发送反馈</string>
+    <string name="feedback">反馈</string>
+    <string name="select_image">+ 添加截图</string>
+    <string name="click_again">再次单击以更改图像</string>
+    <string name="select_picture_title">选择图片</string>
+    <string name="ok">OK</string>
+    <string name="system_info">系统信息</string>
+    <string name="info_fedback_legal_start">"您的 "</string>
+    <string name="info_fedback_legal_system_info">"系统信息 "</string>
+    <string name="info_fedback_legal_and">"和 "</string>
+    <string name="info_fedback_legal_log_data">"日志数据 "</string>
+    <string name="info_fedback_legal_will_be_sent">将被发送到 %s</string>
+    <string name="space">" "</string>
+</resources>

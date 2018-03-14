@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_navigation_fl"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/nav_header">
+
+    <ImageView
+        android:id="@+id/header_navigation_cv"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+       android:layout_marginStart="10dp"
+        android:src="@drawable/ic_user"
+        />
+
+    <TextView
+        android:id="@+id/header_navigation_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:text="0007111111"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/header_navigation_pb"
+            style="@style/StyleProgressBar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+        <!--778780-->
+        <TextView
+            android:id="@+id/header_navigation_tv_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已用0.0B/00"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</FrameLayout>

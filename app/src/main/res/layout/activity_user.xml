@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_user_main"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="个人中心"
+        app:titleTextColor="@android:color/white" />
+
+    <FrameLayout
+        android:id="@+id/activity_user_frame_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setting_item_state"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="40dp"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="修改头像" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_user_frame_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setting_item_state"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="40dp"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="修改昵称" />
+
+        <TextView
+            android:id="@+id/activity_user_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical" />
+    </FrameLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/activity_user_frame_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setting_item_state"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="40dp"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/activity_user_pass" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_user_frame_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setting_item_state"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="40dp"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/activity_user_tv_add" />
+
+        <TextView
+            android:id="@+id/activity_user_tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical" />
+    </FrameLayout>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg_exit"
+        android:id="@+id/activity_user_btn_exit"
+        android:textColor="@android:color/white"
+        android:text="@string/activity_user_btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

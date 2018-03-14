@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "net.lzzy.networkdisk"
+        minSdkVersion 19
+        //noinspection OldTargetApi
+        targetSdkVersion 26
+        versionCode 6
+        versionName "1.1.4"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.yalantis:ucrop:1.4.1'
+    //裁剪图片
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    //md对话框
+    compile 'com.github.clans:fab:1.6.4'
+    //浮动按钮
+    //noinspection GradleDependency
+    compile 'com.jakewharton:butterknife:8.4.0'
+    //注解
+    //noinspection GradleDependency
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.lzy.net:okgo:3.0.4'
+    //网络请求
+    compile 'com.lzy.net:okserver:2.0.5'
+    //上传下载管理
+    //noinspection GradleDependency
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片处理
+    implementation files('libs/fastjson-1.2.41.jar')
+    //JSON
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    //检查内存泄漏
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/commons-email-1.5.jar')
+    implementation files('libs/mail.jar')
+}

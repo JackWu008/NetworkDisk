@@ -1,0 +1,80 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <item name="android:itemBackground">@android:color/white</item>
+
+        <!-- 溢出菜单 字体颜色 -->
+        <!--  高版本api 上，需要这样设置，否则没效果-->
+        <item name="android:textAppearanceLargePopupMenu">@style/ItemTextAppearance</item>
+        <item name="textAppearanceLargePopupMenu">@style/ItemTextAppearance</item>
+
+    </style>
+
+
+    <style name="StyleProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar</item>
+
+    </style>
+
+    <style name="ThemeErrorTextAppearance">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="ItemTextAppearance" parent="@style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppWelcomeTheme" parent="android:Theme.Translucent.NoTitleBar.Fullscreen" />
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/edit_top_margin</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/edit_content_size</item>
+        <item name="android:textColor">@color/colorEditContent</item>
+    </style>
+
+    <style name="HintAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/edit_hint_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="HintErrorAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/edit_hint_size</item>
+        <item name="android:textColor">@color/colorHintError</item>
+        <item name="textColorError">@color/colorHintError</item>
+    </style>
+
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_colorNormal">@color/colorPrimary</item>
+        <item name="fab_colorPressed">#61c7f5</item>
+        <item name="fab_colorRipple">#bee3f4</item>
+    </style>
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>
