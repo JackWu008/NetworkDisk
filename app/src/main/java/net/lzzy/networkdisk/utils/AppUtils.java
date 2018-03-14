@@ -37,7 +37,7 @@ import java.util.logging.Level;
 
 import okhttp3.OkHttpClient;
 
-public class AppUtils extends Application {
+public class AppUtils extends Application  {
     private List<Activity> activities = new ArrayList<>();
     private static AppUtils context;
 
@@ -94,6 +94,7 @@ public class AppUtils extends Application {
                 .setRetryCount(1);                         //全局统一超时重连次数，默认为三次，那么最差的情况会请求4次(一次原始请求，三次重连请求)，不需要可以设置为0
         //.addCommonHeaders(headers);                     //全局公共头
 //                .addCommonParams(params);                       //全局公共参数
+
 
 
 
@@ -311,5 +312,6 @@ public class AppUtils extends Application {
         }
         return null;
     }
+
 
 }

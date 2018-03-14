@@ -112,6 +112,7 @@ public class MainActivity extends BaseActivity implements NavigationView.
     @SuppressLint("SetTextI18n")
     @Override
     protected void init() {
+
         String[] perms = {"android.permission.WRITE_EXTERNAL_STORAGE"};
         tags = getResources().getStringArray(R.array.main_tags);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -582,4 +583,6 @@ public class MainActivity extends BaseActivity implements NavigationView.
                 break;
         }
     }
+
+
 }

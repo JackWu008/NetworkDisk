@@ -2,7 +2,6 @@ package net.lzzy.networkdisk.activitys;
 
 
 import android.content.Intent;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
@@ -58,10 +57,11 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void init() {
-        String[] perms = {"android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.CHANGE_WIFI_STATE"};
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            requestPermissions(perms, 201);
-        }
+
+//        String[] perms = {"android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.CHANGE_WIFI_STATE"};
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            requestPermissions(perms, 201);
+//        }
 
         KeyBoardUtil.openKeybord(edt_email, this);
         edt_email.addTextChangedListener(new TextWatcher() {
@@ -277,5 +277,9 @@ public class LoginActivity extends BaseActivity {
 //                }
                 break;
         }
+    }
+
+    private void testError() {
+        int a = 10 / 0;
     }
 }
